@@ -39,3 +39,49 @@ const observer = new IntersectionObserver(
 );
 
 revealElements.forEach((element) => observer.observe(element));
+
+
+// V7: bilingual content switching (no page reload, no network requests).
+(function initLanguageSwitcher() {
+  const translations = window.siteTranslations;
+  if (!translations) return;
+  const buttons = [...document.querySelectorAll('.lang-button')];
+  const translationNodes = [...document.querySelectorAll('[data-i18n]')];
+  const attributeNodes = [...document.querySelectorAll('*')].filter(el => [...el.attributes].some(a => a.name.startsWith('data-i18n-attr-')));
+  const metaNodes = [...document.querySelectorAll('[data-i18n-meta]')];
+  function setLanguage(lang, persist = true) {
+    if (!Object.hasOwn(translations, lang)) lang = 'en';
+    const dict = translations[lang];
+    translationNodes.forEach(el => {
+      const key = el.dataset.i18n;
+      if (Object.hasOwn(dict, key)) el.textContent = dict[key];
+    });
+    attributeNodes.forEach(el => {
+      [...el.attributes].forEach(a => {
+        if (a.name.startsWith('data-i18n-attr-')) {
+          const targetAttribute = a.name.slice('data-i18n-attr-'.length);
+          if (Object.hasOwn(dict, a.value)) el.setAttribute(targetAttribute, dict[a.value]);
+        }
+      });
+    });
+    metaNodes.forEach(el => {
+      const key = el.dataset.i18nMeta;
+      if (Object.hasOwn(dict, key)) el.setAttribute('content', dict[key]);
+    });
+    document.documentElement.lang = lang;
+    buttons.forEach(button => {
+      const active = button.dataset.lang === lang;
+      button.setAttribute('aria-pressed', String(active));
+      button.classList.toggle('active', active);
+    });
+    if (persist) {
+      try { localStorage.setItem('iq-language', lang); } catch (_) {}
+    }
+  }
+  let saved = null;
+  try { saved = localStorage.getItem('iq-language'); } catch (_) {}
+  const fromURL = new URLSearchParams(window.location.search).get('lang');
+  const firstLanguage = ['en', 'es'].includes(fromURL) ? fromURL : (['en','es'].includes(saved) ? saved : 'en');
+  setLanguage(firstLanguage, Boolean(fromURL));
+  buttons.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
+})();

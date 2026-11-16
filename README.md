@@ -1,19 +1,25 @@
-# Ignacio Quiroz — Academic Website v4
+# Ignacio Quiroz — Academic Website v7 (EN / ES)
 
-Static personal academic website hosted with GitHub Pages.
+Sitio estático bilingüe listo para GitHub Pages. No requiere npm, servidor, compilación ni servicios de traducción.
 
-## Deploy
+## Archivos clave
 
-Upload the **contents** of this folder into the root of `ignacioquirozc/ignacioquirozc.github.io` on branch `main`, keeping `files/Ignacio_Quiroz_CV_2026.pdf` in that location. Settings > Pages: deploy from main, root.
+- `index.html`: contenido y marcadores de traducción (`data-i18n`).
+- `translations.js`: diccionarios EN/ES (incluye texto biográfico, secciones, navegación y metadatos).
+- `script.js`: selección de idioma, persistencia en `localStorage`, menú móvil y animaciones.
+- `styles.css`: diseño responsive v6 + selector EN/ES.
+- `images/`: fotografía, `files/`: CV descargable.
 
-## Sections
+## Publicar
 
-Research, Projects, Publications, Talks, Outreach, Academic background, Data, Contact.
+Subir **el contenido interno** de esta carpeta (no la carpeta ni un ZIP) a la raíz de `ignacioquirozc/ignacioquirozc.github.io`, rama `main`. Reemplazar los archivos existentes y **añadir `translations.js`**. Confirmar el commit. La web se actualiza desde GitHub Pages.
 
-## Sources and editorial note
+Abrir `https://ignacioquirozc.github.io/?v=7`. Para escoger el idioma desde una URL: `?lang=es` o `?lang=en`. El idioma seleccionado queda guardado en el navegador.
 
-Content adapted from the academic CV supplied November 2026. Publication metadata and URLs are transcribed from that CV. Personal information (birthdate, telephone) is intentionally omitted. Pending: actual portrait, source image figures, ongoing publication list audit, public slides.
+## Editar traducciones
 
+Buscar un fragmento de texto en `index.html` y localizar su `data-i18n` asociado. En `translations.js`, editar la entrada correspondiente tanto en `en` como en `es`. Los títulos oficiales de papers y charlas y los nombres propios se mantienen en el idioma original.
 
-## v5 — About Me
-Added the approved biography under About Me and the user-supplied Aysén photograph (`images/aysen-ignacio.jpg`). The hero profile placeholder is replaced with the photograph. Upload the contents of this folder to the repository root, preserving `images/` and `files/`.
+Las traducciones se cargan mediante `translations.js` para que la vista local `file://` funcione incluso sin servidor. No se utiliza Google Translate ni llamadas externas.
+
+Versión: **7.0.0**.
