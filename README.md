@@ -1,42 +1,19 @@
-# Nacho Academic Website — v2
+# Ignacio Quiroz — Academic Website v4
 
-Static personal academic website for Ignacio / Nacho.
+Static personal academic website hosted with GitHub Pages.
 
-## What this version includes
+## Deploy
 
-- Modern landing page with dark cosmology-inspired visual identity.
-- Responsive navigation.
-- Research overview.
-- Project windows for Jellyfish galaxies and Halo Spin / SOC.
-- Publications/manuscripts section.
-- Talks and outreach section.
-- Data science and consulting profile.
-- Contact/link placeholders.
+Upload the **contents** of this folder into the root of `ignacioquirozc/ignacioquirozc.github.io` on branch `main`, keeping `files/Ignacio_Quiroz_CV_2026.pdf` in that location. Settings > Pages: deploy from main, root.
 
-## How to preview
+## Sections
 
-Open `index.html` in a browser.
+Research, Projects, Publications, Talks, Outreach, Academic background, Data, Contact.
 
-## What to replace next
+## Sources and editorial note
 
-Search in `index.html` for these placeholders:
+Content adapted from the academic CV supplied November 2026. Publication metadata and URLs are transcribed from that CV. Personal information (birthdate, telephone) is intentionally omitted. Pending: actual portrait, source image figures, ongoing publication list audit, public slides.
 
-- `Ignacio` → replace with full academic name if desired.
-- `your.email@example.com` → institutional or preferred email.
-- `#` links → GitHub, ORCID, Google Scholar, NASA ADS, LinkedIn.
-- `Replace with photo` → replace the avatar block with an image.
-- Publication titles → replace with final titles/authors/status.
-- Talks → replace with actual event names, dates, and links.
-- `files/cv-placeholder.pdf` → replace with real CV PDF path.
 
-## Deploy to GitHub Pages
-
-1. Create a repository named `<your-github-user>.github.io`.
-2. Upload all files from this folder to the repository root.
-3. Go to Settings → Pages.
-4. Select deployment from the main branch.
-5. Visit `https://<your-github-user>.github.io`.
-
-## Design notes
-
-The page is intentionally static: no build step, no framework, no dependency. This is the simplest robust version to publish and iterate.
+## v5 — About Me
+Added the approved biography under About Me and the user-supplied Aysén photograph (`images/aysen-ignacio.jpg`). The hero profile placeholder is replaced with the photograph. Upload the contents of this folder to the repository root, preserving `images/` and `files/`.
