@@ -1,6 +1,16 @@
 // v7.0 — Offline-ready bilingual translations. Official titles and names remain unchanged.
 window.siteTranslations = {
   "en": {
+    "school_pascal_2025_tag": "April 2025 · School astronomy",
+    "school_pascal_2025_desc": "Astronomy outreach talk at Colegio Capellán Pascal, introducing how scientists investigate the Universe.",
+    "school_pascal_2026_tag": "April 2026 · School astronomy",
+    "school_pascal_2026_desc": "Astronomy lecture at Colegio Capellán Pascal on the history and evolution of the Universe.",
+    "school_stpauls_tag": "May 2026 · Educational guidance",
+    "school_stpauls_title": "Guidance talk at St Paul's School",
+    "school_stpauls_desc": "A talk for secondary-school students about university studies and educational pathways.",
+    "video_award_tag": "2026 · Science communication · Second place",
+    "video_award_desc": "Second place (2026) for a social-media video explaining research on jellyfish galaxies.",
+    "video_award_link": "Watch the video ↗",
     "t004": "Research",
     "t005": "Projects",
     "t006": "Publications",
@@ -118,6 +128,16 @@ window.siteTranslations = {
     "og_description": "Research portfolio: jellyfish galaxies, galaxy clusters, halo spin, spin–orbit coherence, and data analysis."
   },
   "es": {
+    "school_pascal_2025_tag": "Abril 2025 · Astronomía escolar",
+    "school_pascal_2025_desc": "Charla de divulgación en el Colegio Capellán Pascal sobre cómo investigamos el Universo.",
+    "school_pascal_2026_tag": "Abril 2026 · Astronomía escolar",
+    "school_pascal_2026_desc": "Charla en el Colegio Capellán Pascal sobre la historia y evolución del Universo.",
+    "school_stpauls_tag": "Mayo 2026 · Orientación educativa",
+    "school_stpauls_title": "Charla de orientación en St Paul's School",
+    "school_stpauls_desc": "Charla de orientación para estudiantes de enseñanza media sobre estudios universitarios y trayectorias formativas.",
+    "video_award_tag": "2026 · Divulgación científica · Segundo lugar",
+    "video_award_desc": "Segundo lugar en 2026 en «Mi galaxia me habló», con un video para redes sociales explicando investigación sobre galaxias medusa.",
+    "video_award_link": "Ver el video ↗",
     "t004": "Investigación",
     "t005": "Proyectos",
     "t006": "Publicaciones",

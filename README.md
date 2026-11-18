@@ -23,3 +23,7 @@ Buscar un fragmento de texto en `index.html` y localizar su `data-i18n` asociado
 Las traducciones se cargan mediante `translations.js` para que la vista local `file://` funcione incluso sin servidor. No se utiliza Google Translate ni llamadas externas.
 
 Versión: **7.0.0**.
+
+## v9 (November 2026)
+- Added year 2026 to the Mi galaxia me habló second-place recognition in English and Spanish.
+- Updated downloadable academic CV to reflect the award year.
