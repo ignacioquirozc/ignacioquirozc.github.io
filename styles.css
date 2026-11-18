@@ -849,3 +849,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .site-header .nav { order:4; margin:0; }
   .header-controls { margin-left:auto; gap:9px; }
 }
+
+/* v10 — categorized technical experience */
+.technical-groups { display: grid; gap: 1.4rem; margin-top: 1.2rem; }
+.technical-group h3 { margin: 0 0 .55rem; font-size: 1rem; font-weight: 650; letter-spacing: .01em; color: var(--text, #edf5ff); }
+.technical-group .skill-list { margin-top: 0; }

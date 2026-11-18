@@ -1,6 +1,17 @@
 // v7.0 — Offline-ready bilingual translations. Official titles and names remain unchanged.
 window.siteTranslations = {
   "en": {
+    "tech_codes": "Numerical and astrophysical codes",
+    "tech_sims": "Cosmological simulations",
+    "tech_surveys": "Surveys and astronomical software",
+    "tech_methods": "Computational and statistical methods",
+    "tech_workflow": "Research workflow",
+    "tech_languages": "Languages",
+    "lang_spanish": "Spanish (native)",
+    "lang_english": "English (C1)",
+    "tech_ml": "Machine learning",
+    "tech_dl": "Deep learning",
+    "tech_si": "Statistical inference",
     "school_pascal_2025_tag": "April 2025 · School astronomy",
     "school_pascal_2025_desc": "Astronomy outreach talk at Colegio Capellán Pascal, introducing how scientists investigate the Universe.",
     "school_pascal_2026_tag": "April 2026 · School astronomy",
@@ -128,6 +139,17 @@ window.siteTranslations = {
     "og_description": "Research portfolio: jellyfish galaxies, galaxy clusters, halo spin, spin–orbit coherence, and data analysis."
   },
   "es": {
+    "tech_languages": "Idiomas",
+    "lang_spanish": "Español (nativo)",
+    "lang_english": "Inglés (C1)",
+    "tech_codes": "Códigos numéricos y astrofísicos",
+    "tech_sims": "Simulaciones cosmológicas",
+    "tech_surveys": "Surveys y software astronómico",
+    "tech_methods": "Métodos computacionales y estadísticos",
+    "tech_workflow": "Herramientas de investigación",
+    "tech_ml": "Aprendizaje automático",
+    "tech_dl": "Aprendizaje profundo",
+    "tech_si": "Inferencia estadística",
     "school_pascal_2025_tag": "Abril 2025 · Astronomía escolar",
     "school_pascal_2025_desc": "Charla de divulgación en el Colegio Capellán Pascal sobre cómo investigamos el Universo.",
     "school_pascal_2026_tag": "Abril 2026 · Astronomía escolar",

@@ -27,3 +27,13 @@ Versión: **7.0.0**.
 ## v9 (November 2026)
 - Added year 2026 to the Mi galaxia me habló second-place recognition in English and Spanish.
 - Updated downloadable academic CV to reflect the award year.
+
+## v10 (November 2026)
+- Added DICE, MUSIC, RAMSES, IllustrisTNG, Uchuu, MultiDark–Planck, SDSS, HSC, TOPCAT, SAOImage DS9 and MAGPHYS.
+- Added machine learning, deep learning, and statistical inference as separate skills.
+- Organized technical experience into EN/ES categories and updated downloadable CV.
+
+## v11 (November 2026)
+- Updated CV language proficiency to English (C1) with no outdated caveat.
+- Added Spanish (native) and English (C1) to the bilingual website skills section.
+- Updated downloadable CV PDF.
